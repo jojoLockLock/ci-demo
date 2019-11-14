@@ -23,6 +23,12 @@
 	<name>JaCoCo Maven plug-in example for Java project</name>
 	<url>http://www.eclemma.org/jacoco</url>
 
+
+	<properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
