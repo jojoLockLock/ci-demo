@@ -1,0 +1,14 @@
+name: test-tencentcloud-cli
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: mingshun/tencentcloud-cli-action@master
+      with: 
+          commands: help && version
+          output_format: json
