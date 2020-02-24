@@ -9,6 +9,9 @@ jobs:
 
     steps:
     - uses: mingshun/tencentcloud-cli-action@master
-      with: 
-          commands: help && version
-          output_format: json
+      with:
+        secret_id: ${{ secrets.TENCENT_CLOUD_SECRET_ID }}
+        secret_key: ${{ secrets.TENCENT_CLOUD_SECRET_KEY }}
+        region: "guangzhou" 
+        commands: help && version
+        output_format: json
